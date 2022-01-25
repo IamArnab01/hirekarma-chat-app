@@ -4,6 +4,8 @@ const dotenv = require("dotenv");
 const cors = require("cors");
 const authRoutes = require("./routes/auth");
 const profileRoutes = require("./routes/profile");
+const chatUserPairsRoutes = require("./routes/chatUserPairs");
+const messagesRoutes = require("./routes/messages");
 
 // spinnig the express app
 const app = express();
@@ -23,5 +25,7 @@ app.use(express.json());
 // route middlewares
 app.use("/api", authRoutes);
 app.use("/api", profileRoutes);
+app.use("/api/chat/user", chatUserPairsRoutes);
+app.use("/api/chat/message", messagesRoutes);
 
 app.listen(PORT, () => console.log(`App Runnig on port ${PORT}`));

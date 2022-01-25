@@ -1,6 +1,6 @@
 const router = require("express").Router();
 const privateRoute = require("../middlewares/privateRoute");
-const User = require("../models/user");
+const User = require("../models/User");
 
 router.get("/profile", privateRoute, async (req, res) => {
   const user = await User.findOne({ email: req.user.email });
