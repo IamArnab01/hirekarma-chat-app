@@ -1,0 +1,70 @@
+.th-sidebar-bg {
+  background: #303c6c;
+  border-radius: 0px 20px 20px 0px;
+  height: 100vh;
+}
+
+.th-header-heading {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  color: #3c3c3c;
+}
+
+.th-header-filter-box {
+  background: #f4f4f4;
+  border-radius: 10px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.th-header-sort {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  color: #3c3c3c;
+  margin-left: 12px;
+}
+
+.th-header-username {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: #3c3c3c;
+}
+
+.th-header-bg {
+  background: #303c6c;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .px-md-36 {
+    padding-right: 36px !important;
+    padding-left: 36px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .th-header-heading {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+    margin: 0;
+  }
+}
