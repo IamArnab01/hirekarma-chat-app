@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./app/assets/css/layout.css";
+import "./app/assets/css/home.css";
 import App from "./routes/App";
 import reportWebVitals from "./reportWebVitals";
 

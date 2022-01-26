@@ -1,0 +1,106 @@
+/* chatlist search*/
+.th-chatlist-searchbox {
+  background: #ffffff;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.35);
+  border-radius: 10px;
+}
+
+.th-chatlist-form-control,
+.th-chatlist-form-control:focus {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  color: #bbbbbb;
+  border: none;
+  box-shadow: none !important;
+  padding-left: 1.25rem;
+}
+
+.th-chatlist-form-control::placeholder {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  color: #bbbbbb;
+}
+
+/* chatlist */
+.th-chatlist-card {
+  background: #ffffff;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  max-height: 560px;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  margin-top: 36px;
+}
+.th-chatlist-card::-webkit-scrollbar {
+  display: none;
+}
+
+.th-chartlist-usr-card {
+  margin: 0;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.th-chartlist-usr-card:last-child {
+  border: none !important;
+}
+
+.th-chatlist-usr-img {
+  width: 60px;
+}
+
+.th-chatlist-usr-name {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: -0.02em;
+  color: #3c3c3c;
+  line-height: 24px;
+}
+
+.th-chatlist-usr-desc {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: #ababab;
+}
+
+.th-chatlist-usr-time {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  letter-spacing: -0.02em;
+  color: #ababab;
+  line-height: 24px;
+}
+
+.th-chatlist-usr-msg-cnt {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #fa976c;
+  /*  */
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 1px;
+}

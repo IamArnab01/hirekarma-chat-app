@@ -1,7 +1,7 @@
 import React from "react";
 import FilterIcon from "../assets/images/sort.png";
 import NotificationIcon from "../assets/images/notification.png";
-import UserIcon from "../assets/images/users/user.png";
+import UserIcon from "../assets/images/user.png";
 import ArrowDown from "../assets/images/arrow-down.png";
 import Menu from "../assets/images/menu.png";
 
