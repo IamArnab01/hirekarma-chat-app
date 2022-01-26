@@ -1,0 +1,98 @@
+.th-chatbox-card {
+  background: #ffffff;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.35);
+  border-radius: 20px;
+}
+.th-chatbox-card-header {
+  background: #303c6c;
+  border-radius: 20px 20px 0px 0px !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 28px;
+}
+
+.th-chatbox-usr2-name {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+
+.th-chatbox-card-body {
+  max-height: 472px;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+}
+
+.th-chatbox-card-body::-webkit-scrollbar {
+  display: none;
+}
+
+.th-chatbox-msg-card {
+  margin-left: 20px;
+  margin-right: 20px;
+  max-width: 50%;
+  background: #f4f4f4;
+  border-radius: 0px 20px 10px;
+  border: none;
+  padding: 12px;
+}
+
+.th-chatbox-msg-card.own {
+  background: rgba(180, 223, 229, 0.5);
+  border-radius: 20px 0px 10px 20px;
+}
+
+.th-chat-msg-input-box-wraper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 36px;
+}
+
+.th-chat-msg-input-box {
+  border: 1px solid #bbbbbb;
+  box-sizing: border-box;
+  border-radius: 10px;
+  width: 100%;
+  padding: 10px 16px;
+  margin-right: 20px;
+}
+
+.th-chatbox-form-control,
+.th-chatbox-form-control:focus {
+  box-shadow: none !important;
+  border: none !important;
+  padding-left: 0;
+}
+
+.th-chatbox-form-control,
+.th-chatbox-form-controll::placeholder {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: #3c3c3c;
+}
+
+.th-chatbox-send-icon {
+  width: 67.5px;
+  height: 60px;
+  border-radius: 50%;
+  background: #c4c4c4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  /* margin-left: 20px; */
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1140px) {
+  .th-chatbox-msg-card {
+    max-width: 70%;
+  }
+}
