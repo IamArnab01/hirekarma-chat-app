@@ -1,49 +1,64 @@
 import React from "react";
 import UserIcon from "../../../assets/images/user2.png";
-import DotsIcon from "../../../assets/images/dots-more.png";
-import CancelIcon from "../../../assets/images/cross.png";
+import DotsIcon from "../../../assets/images/dots-more-mob.png";
+import ArrowLeftIcon from "../../../assets/images/arrow-left-mob.png";
 import AttachmentIcon from "../../../assets/images/attachment.png";
 import SendIcon from "../../../assets/images/send.png";
+import Menu from "../../../assets/images/menu.png";
 import { chatData as data } from "./data";
 
-const ChatBoxWeb = () => {
+const ChatBoxMob = (props) => {
   const handleSendMessage = (e) => {
     e.preventDeffault();
   };
 
   return (
-    <div className="pt-1">
-      <div className="card th-chatbox-card border-0">
-        {/* card header */}
-        <div className="card-header th-chatbox-card-header">
+    <React.Fragment>
+      {/* header */}
+      <div className="row th-header-bg-2">
+        <div className="col-2">
+          <img src={Menu} alt="" />
+        </div>
+        <div className="col-8">
+          <p className="th-header-heading">Messages</p>
+        </div>
+      </div>
+      {/* card header */}
+      <div className="th-chatbox-mob-usr-card">
+        <div className="d-flex align-items-center">
+          <img
+            src={ArrowLeftIcon}
+            alt=""
+            style={{ cursor: "pointer", marginRight: 12 }}
+            onClick={props.closeModal}
+          />
           <div className="d-flex align-items-center">
-            <img src={UserIcon} alt="" />
-            <p className="mb-0 mx-3 th-chatbox-usr2-name">Esther Howard</p>
-          </div>
-          <div className="d-flex align-items-center">
-            <img
-              src={DotsIcon}
-              alt=""
-              className="mx-3"
-              style={{ cursor: "pointer" }}
-            />
-            <img src={CancelIcon} alt="" style={{ cursor: "pointer" }} />
+            <img src={UserIcon} alt="" width={40} />
+            <div>
+              <p className="mb-0 mx-3 th-chatbox-mob-usr2-name">
+                Esther Howard
+              </p>
+              <p className="mb-0 mx-3 th-chatbox-mob-usr2-status">online</p>
+            </div>
           </div>
         </div>
+        <img src={DotsIcon} alt="" style={{ cursor: "pointer" }} />
+      </div>
+      {/*  */}
+      <div className="th-chat-mob-margin-top">
         {/* chat section */}
-        <div className="card-body th-chatbox-card-body px-4 pb-0">
+        <div className="card-body pb-0">
           {data &&
             data.map((item, index) => {
               let chatCardWraperClasses = item.own
-                ? "d-flex align-items-start flex-row-reverse pb-3"
-                : "d-flex align-items-start pb-3";
+                ? "d-flex align-items-start flex-row-reverse pb-4"
+                : "d-flex align-items-start pb-4";
 
               let messageCardClass = item.own
                 ? "card th-chatbox-msg-card own"
                 : "card th-chatbox-msg-card";
               return (
                 <div className={chatCardWraperClasses} key={index}>
-                  <img src={item.src} alt="" width={40} />
                   <div className={messageCardClass}>
                     <p className="mb-1">{item.msg}</p>
                     <p className="mb-0 text-end mx-2">{item.time}</p>
@@ -62,17 +77,17 @@ const ChatBoxWeb = () => {
                   className="form-control th-chatbox-form-control"
                   placeholder="Write a messgae"
                 />
-                <img src={AttachmentIcon} alt="" />
+                <img src={AttachmentIcon} alt="" width={24} />
               </div>
             </form>
           </div>
           <div className="th-chatbox-send-icon" onClick={handleSendMessage}>
-            <img src={SendIcon} alt="" />
+            <img src={SendIcon} alt="" width={24} />
           </div>
         </div>
       </div>
-    </div>
+    </React.Fragment>
   );
 };
 
-export default ChatBoxWeb;
+export default ChatBoxMob;

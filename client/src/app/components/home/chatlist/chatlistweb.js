@@ -3,12 +3,13 @@ import SearchIcon from "../../../assets/images/search.png";
 import ChatlistCard from "./card";
 import { data } from "./data";
 
-const ChatList = () => {
+const ChatListWeb = () => {
   const handleSearch = (e) => {
     e.preventDefault();
   };
+
   return (
-    <div>
+    <React.Fragment>
       <div className="py-1 px-3 card th-chatlist-searchbox border-0">
         <form onSubmit={handleSearch}>
           <div className="d-flex align-items-center justify-content-between">
@@ -27,8 +28,8 @@ const ChatList = () => {
             return <ChatlistCard data={item} index={index} />;
           })}
       </div>
-    </div>
+    </React.Fragment>
   );
 };
 
-export default ChatList;
+export default ChatListWeb;

@@ -3,6 +3,7 @@
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.35);
   border-radius: 20px;
 }
+
 .th-chatbox-card-header {
   background: #303c6c;
   border-radius: 20px 20px 0px 0px !important;
@@ -94,5 +95,95 @@
 @media only screen and (min-width: 992px) and (max-width: 1140px) {
   .th-chatbox-msg-card {
     max-width: 70%;
+  }
+}
+
+/* chat box popup for mobile */
+.th-home-modal-content {
+  height: fit-content !important;
+  border-radius: 0 !important;
+  border: none !important;
+}
+
+.th-home-modal-dialog {
+  margin: 0 !important;
+  max-width: 100%;
+}
+
+.th-chatbox-mob-usr-card {
+  background: #ffffff;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  padding: 12px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  top: 48px;
+}
+
+.th-header-bg-2 {
+  background: #303c6c;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: 104%;
+  z-index: 100;
+}
+
+.th-chatbox-mob-usr2-name {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: -0.02em;
+  color: #3c3c3c;
+}
+
+.th-chatbox-mob-usr2-status {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: #3c3c3c;
+}
+
+.th-chat-mob-margin-top {
+  margin-top: 120px;
+  padding-bottom: 68px;
+}
+
+@media only screen and (max-width: 768px) {
+  .th-chatbox-msg-card {
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 80%;
+    border-radius: 0px 10px;
+  }
+  .th-chatbox-msg-card.own {
+    background: rgba(180, 223, 229, 0.5);
+    border-radius: 10px 0;
+  }
+  .th-chat-msg-input-box-wraper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 100;
+    background: #ffffff;
+  }
+  .th-chat-msg-input-box {
+    padding: 6px 12px;
+    margin-right: 16px;
+  }
+  .th-chatbox-send-icon {
+    width: 60px;
+    height: 48px;
   }
 }
