@@ -24,7 +24,7 @@ app.use(cors());
 app.use(express.json());
 // route middlewares
 app.use("/api", authRoutes);
-app.use("/api", profileRoutes);
+app.use("/api/user", profileRoutes);
 app.use("/api/chat/user", chatUserPairsRoutes);
 app.use("/api/chat/message", messagesRoutes);
 
