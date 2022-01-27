@@ -42,4 +42,10 @@ app.use("/api/user", profileRoutes);
 app.use("/api/chat/user", chatUserPairsRoutes);
 app.use("/api/chat/message", messagesRoutes);
 
+app.use(express.static(path.join(__dirname, "/client")));
+
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "/client/build", "index.html"));
+});
+
 app.listen(PORT, () => console.log(`App Runnig on port ${PORT}`));

@@ -22,11 +22,11 @@ export const loginUser = (userData) => (dispatch) => {
       const decoded = jwt_decode(token);
       console.log(decoded);
       // // Set current user
-      // dispatch(setCurrentUser(decoded));
-      // // login messag on succes
-      // toast("Logged in Successfully", { type: "success" });
-      // // set loading to false
-      // dispatch(setUserLoaded());
+      dispatch(setCurrentUser(decoded));
+      // login messag on succes
+      toast("Logged in Successfully", { type: "success" });
+      // set loading to false
+      dispatch(setUserLoaded());
     })
     .catch((err) => {
       dispatch(setUserLoaded());
