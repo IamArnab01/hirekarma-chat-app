@@ -19,6 +19,20 @@ mongoose.connect(process.env.DB_URL, { useNewUrlParser: true }, () =>
   console.log("db connected")
 );
 
+// Handle CORS error
+// app.use((req, res, next) => {
+//   res.header("Access-Control-Allow-Origin", "*");
+//   res.header(
+//     "Access-Control-Allow-Headers",
+//     "Origin, X-Requested-With, Content-Type, Accept, Authorization"
+//   );
+//   if (req.method === "OPTIONS") {
+//     res.header("Access-Control-Allow-Methods", "PUT, POST, PATCH, DELETE, GET");
+//     return res.status(200).json({});
+//   }
+//   next();
+// });
+
 // middlewares
 app.use(cors());
 app.use(express.json());
