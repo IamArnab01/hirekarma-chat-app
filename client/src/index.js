@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./app/assets/css/layout.css";
 import "./app/assets/css/chatlist.css";
 import "./app/assets/css/chatbox.css";
+import "./app/assets/css/auth.css";
 import App from "./routes/App";
 import reportWebVitals from "./reportWebVitals";
 
